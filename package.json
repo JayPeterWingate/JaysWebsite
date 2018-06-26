@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "npm run eslint && npm run mocha",
-    "deploy":"git push azure master",
+    "deploy":"git push && git push azure master",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node src/",
     "mocha": "mocha test/ --recursive --exit"
