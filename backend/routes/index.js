@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.post('/',(req,res) => {
+router.post('/api',(req,res) => {
   res.send("Hello World")
 })
 module.exports = router;
